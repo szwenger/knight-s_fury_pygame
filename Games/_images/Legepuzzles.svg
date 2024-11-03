@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70cm"
+   height="35cm"
+   viewBox="59 39 1395.8209 697.87879"
+   version="1.1"
+   id="svg285"
+   sodipodi:docname="Legepuzzles.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs289" />
+  <sodipodi:namedview
+     id="namedview287"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="cm"
+     showgrid="false"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:zoom="0.59342262"
+     inkscape:cx="1321.9921"
+     inkscape:cy="659.73218"
+     inkscape:window-width="1850"
+     inkscape:window-height="1009"
+     inkscape:window-x="70"
+     inkscape:window-y="34"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg285"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:object-paths="true" />
+  <text
+     id="text44-3"
+     y="-34.341305"
+     x="1396.3447"
+     style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999514"
+     font-size="12.7938px" />
+  <rect
+     style="fill:none;fill-opacity:1;stroke:none;stroke-width:0.190756;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect188147"
+     width="1395.6301"
+     height="697.71973"
+     x="59.095379"
+     y="39.080437" />
+  <g
+     id="g3736">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="970.21045"
+       y="59.9403"
+       width="264.10001"
+       height="28"
+       id="rect2" />
+    <text
+       font-size="16px"
+       style="font-style:normal;font-weight:700;font-family:sans-serif;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="1102.2605"
+       y="78.791901"
+       id="text4">GeoForm</text>
+    <rect
+       style="fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="970.21045"
+       y="87.9403"
+       width="264.10001"
+       height="68"
+       id="rect6" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="973.21045"
+       y="101.8215"
+       id="text8">+pos: Vec2f</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="973.21045"
+       y="117.8215"
+       id="text10">+angle: float</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="973.21045"
+       y="133.8213"
+       id="text12">+center: Vec2f</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="973.21045"
+       y="149.8213"
+       id="text14">+color: Vec3i</text>
+    <rect
+       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="970.21045"
+       y="155.94031"
+       width="264.10001"
+       height="68"
+       id="rect16" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="973.21045"
+       y="169.8213"
+       id="text18">+translate(t:Vec2f)</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="973.21045"
+       y="185.8213"
+       id="text20">+rotate(phi:float)</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="973.21045"
+       y="201.8213"
+       id="text22">+transform(p:Vec2f): Vec2f</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="973.21045"
+       y="217.8213"
+       id="text24">+inverseTransform(p:Vec2f): Vec2f</text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="810.21045"
+       y="339.94031"
+       width="225.60001"
+       height="28"
+       id="rect28" />
+    <text
+       font-size="16px"
+       style="font-style:normal;font-weight:700;font-family:sans-serif;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="923.01044"
+       y="358.7923"
+       id="text30">Polygon</text>
+    <rect
+       style="fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="810.21045"
+       y="367.94031"
+       width="225.60001"
+       height="20"
+       id="rect32" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="813.21045"
+       y="381.82132"
+       id="text34">+points: Vec2f[*]</text>
+    <rect
+       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="810.21045"
+       y="387.94031"
+       width="225.60001"
+       height="68"
+       id="rect36" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="813.21045"
+       y="401.82132"
+       id="text38">+Polygon(p:Vec2f[*],c:Vec3i)</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="813.21045"
+       y="417.82132"
+       id="text40">+detCenter()</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="813.21045"
+       y="433.82132"
+       id="text42">+contains(p:Vec2f): bool</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="813.21045"
+       y="449.82132"
+       id="text44">+draw()</text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="830.21045"
+       y="539.94031"
+       width="194.8"
+       height="28"
+       id="rect48" />
+    <text
+       font-size="16px"
+       style="font-style:normal;font-weight:700;font-family:sans-serif;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="927.61047"
+       y="558.7923"
+       id="text50">ConvexPolygon</text>
+    <rect
+       style="fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="830.21045"
+       y="567.94031"
+       width="194.8"
+       height="8"
+       id="rect52" />
+    <rect
+       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="830.21045"
+       y="575.94031"
+       width="194.8"
+       height="20"
+       id="rect54" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="833.21045"
+       y="589.82129"
+       id="text56">+contains(p:Vec2f): bool</text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="1090.2104"
+       y="339.94031"
+       width="333.39999"
+       height="28"
+       id="rect60" />
+    <text
+       font-size="16px"
+       style="font-style:normal;font-weight:700;font-family:sans-serif;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="1256.9104"
+       y="358.7923"
+       id="text62">MixedPolygon</text>
+    <rect
+       style="fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="1090.2104"
+       y="367.94031"
+       width="333.39999"
+       height="36"
+       id="rect64" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1093.2104"
+       y="381.82132"
+       id="text66">+arcCenter: Vec2f</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1093.2104"
+       y="397.82132"
+       id="text68">+vertices: Vec2f[*]</text>
+    <rect
+       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="1090.2104"
+       y="403.94031"
+       width="333.39999"
+       height="68"
+       id="rect70" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1093.2104"
+       y="417.82132"
+       id="text72">+MixedPolygon(ac:Vec2f,p:Vec2f[*],c:Vec3i)</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1093.2104"
+       y="433.82132"
+       id="text74">+detCenter()</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1093.2104"
+       y="449.82132"
+       id="text76">+contains(p:Vec2f): bool</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1093.2104"
+       y="465.82132"
+       id="text78">+draw()</text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="90.210442"
+       y="59.9403"
+       width="241"
+       height="28"
+       id="rect82" />
+    <text
+       font-size="16px"
+       style="font-style:normal;font-weight:700;font-family:sans-serif;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="210.71045"
+       y="78.791901"
+       id="text84">Puzzle</text>
+    <rect
+       style="fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="90.210442"
+       y="87.9403"
+       width="241"
+       height="36"
+       id="rect86" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="93.210442"
+       y="101.8215"
+       id="text88">+parts: GeoForm[*]</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="93.210442"
+       y="117.8215"
+       id="text90">+name: string</text>
+    <rect
+       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="90.210442"
+       y="123.9403"
+       width="241"
+       height="116"
+       id="rect92" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="93.210442"
+       y="137.8213"
+       id="text94">+Puzzle(parts:GeoForm[*])</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="93.210442"
+       y="153.8213"
+       id="text96">+pick(p:Vec2f): GeoForm</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="93.210442"
+       y="169.8213"
+       id="text98">+snap(part:GeoForm)</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="93.210442"
+       y="185.8213"
+       id="text100">+snapOrientation(part:GeoForm)</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="93.210442"
+       y="201.8213"
+       id="text102">+draw()</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="93.210442"
+       y="217.8213"
+       id="text104">+aabb()</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="93.210442"
+       y="233.8213"
+       id="text106">+save()</text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="59.9403"
+       width="210.2"
+       height="28"
+       id="rect110" />
+    <text
+       font-size="16px"
+       style="font-style:normal;font-weight:700;font-family:sans-serif;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="535.31042"
+       y="78.791901"
+       id="text112">Tangram</text>
+    <rect
+       style="fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="87.9403"
+       width="210.2"
+       height="68"
+       id="rect114" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="101.8215"
+       id="text116">+shape: (Ve2f,float)[*][*]</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="117.8215"
+       id="text118">+shapeCnt: int</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="133.8213"
+       id="text120">+delta: float</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="149.8213"
+       id="text122">+snapOrientationOn: bool</text>
+    <rect
+       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="155.94031"
+       width="210.2"
+       height="20"
+       id="rect124" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="169.8213"
+       id="text126">+Tangram()</text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="599.94031"
+       width="217.89999"
+       height="28"
+       id="rect130" />
+    <text
+       font-size="16px"
+       style="font-style:normal;font-weight:700;font-family:sans-serif;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="539.16046"
+       y="618.7923"
+       id="text132">Magic Egg</text>
+    <rect
+       style="fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="627.94031"
+       width="217.89999"
+       height="68"
+       id="rect134" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="641.82129"
+       id="text136">+shape: (Vec2f,float)[*][*]</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="657.82129"
+       id="text138">+shapeCnt: int</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="673.82129"
+       id="text140">+delta: float</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="689.82129"
+       id="text142">+snapOrientationOn: bool</text>
+    <rect
+       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="695.94031"
+       width="217.89999"
+       height="20"
+       id="rect144" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="709.82129"
+       id="text146">+MagicEgg()</text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="419.94031"
+       width="217.89999"
+       height="28"
+       id="rect150" />
+    <text
+       font-size="16px"
+       style="font-style:normal;font-weight:700;font-family:sans-serif;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="539.16046"
+       y="438.7923"
+       id="text152">AsymmetricT</text>
+    <rect
+       style="fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="447.94031"
+       width="217.89999"
+       height="68"
+       id="rect154" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="461.82132"
+       id="text156">+shape: (Vec2f,float)[*][*]</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="477.82132"
+       id="text158">+shapeCnt: int</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="493.82132"
+       id="text160">+delta: float</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="509.82132"
+       id="text162">+snapOrientationOn: bool</text>
+    <rect
+       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="515.94031"
+       width="217.89999"
+       height="20"
+       id="rect164" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="529.82129"
+       id="text166">+AsymmetricT()</text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="239.94031"
+       width="194.8"
+       height="28"
+       id="rect170" />
+    <text
+       font-size="16px"
+       style="font-style:normal;font-weight:700;font-family:sans-serif;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="527.61041"
+       y="258.7923"
+       id="text172">Ostomachion</text>
+    <rect
+       style="fill:#e3d7f4;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="267.94031"
+       width="194.8"
+       height="68"
+       id="rect174" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="281.82132"
+       id="text176">+(Vec2f,float)[*][*]</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="297.82132"
+       id="text178">+shapeCnt: int</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="313.82132"
+       id="text180">+delta: float</text>
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="329.82132"
+       id="text182">+snapOrientationOn: bool</text>
+    <rect
+       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       x="430.21045"
+       y="335.94031"
+       width="194.8"
+       height="20"
+       id="rect184" />
+    <text
+       font-size="12.8px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="433.21045"
+       y="349.82132"
+       id="text186">+Ostomachion()</text>
+    <polygon
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       fill-rule="evenodd"
+       points="304.241,130 320.241,138 320.241,122 "
+       id="polygon192"
+       transform="translate(30.210445,19.940301)" />
+    <g
+       id="g218"
+       transform="translate(30.210445,19.940301)">
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         points="1072.05,223.241 1072.05,269.999 892.8,269.999 892.8,318.993 "
+         id="polyline214" />
+      <polygon
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         fill-rule="evenodd"
+         points="1064.05,223.241 1080.05,223.241 1072.05,207.241 "
+         id="polygon216" />
+    </g>
+    <g
+       id="g224"
+       transform="translate(30.210445,19.940301)">
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         points="1072.05,223.241 1072.05,269.998 1226.7,269.998 1226.7,318.992 "
+         id="polyline220" />
+      <polygon
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         fill-rule="evenodd"
+         points="1064.05,223.241 1080.05,223.241 1072.05,207.241 "
+         id="polygon222" />
+    </g>
+    <polygon
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+       fill-rule="evenodd"
+       points="892.8,439.243 884.8,455.243 900.8,455.243 "
+       id="polygon228"
+       transform="translate(30.210445,19.940301)" />
+    <g
+       id="g242"
+       transform="translate(30.210445,19.940301)">
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         points="636.378,98 712.603,98 712.603,520 800,520 "
+         id="polyline232" />
+      <polygon
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         fill-rule="evenodd"
+         points="625.206,102.8 611.206,98 625.206,93.2 639.206,98 "
+         id="polygon234" />
+      <text
+         font-size="12.8px"
+         style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         x="714.60303"
+         y="305.98099"
+         id="text236" />
+      <text
+         font-size="12.8px"
+         style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         x="643.20599"
+         y="94.9813"
+         id="text238">1</text>
+      <text
+         font-size="12.8px"
+         style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+         x="796"
+         y="516.98102"
+         id="text240">7</text>
+    </g>
+    <g
+       id="g252"
+       transform="translate(30.210445,19.940301)">
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         points="620.968,278 664.201,278 664.201,548 799.005,548 "
+         id="polyline244" />
+      <polygon
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         fill-rule="evenodd"
+         points="609.796,282.8 595.796,278 609.796,273.2 623.796,278 "
+         id="polygon246" />
+      <text
+         font-size="12.7998px"
+         style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         x="627.79602"
+         y="274.98099"
+         id="text248">1</text>
+      <text
+         font-size="12.7998px"
+         style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+         x="795.005"
+         y="544.98102"
+         id="text250">14</text>
+    </g>
+    <g
+       id="g262"
+       transform="translate(30.210445,19.940301)">
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         points="644.074,638 761.095,638 761.095,576 800,576 "
+         id="polyline254" />
+      <polygon
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         fill-rule="evenodd"
+         points="632.902,642.8 618.902,638 632.902,633.2 646.902,638 "
+         id="polygon256" />
+      <text
+         font-size="12.7998px"
+         style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         x="650.90198"
+         y="634.98102"
+         id="text258">1</text>
+      <text
+         font-size="12.7998px"
+         style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+         x="796"
+         y="572.98102"
+         id="text260">4</text>
+    </g>
+    <text
+       font-size="12.7998px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1260.9104"
+       y="484.8093"
+       id="text270">6</text>
+    <g
+       id="g282"
+       transform="translate(30.210445,19.940301)">
+      <polyline
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         points="644.055,458 680,458 680,378 779.01,378 "
+         id="polyline274" />
+      <polygon
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+         fill-rule="evenodd"
+         points="632.884,462.8 618.884,458 632.884,453.2 646.884,458 "
+         id="polygon276" />
+      <text
+         font-size="12.7998px"
+         style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         x="650.88397"
+         y="454.98099"
+         id="text278">1</text>
+      <text
+         font-size="12.7998px"
+         style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+         x="775.01001"
+         y="374.98099"
+         id="text280">4</text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.99403;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 791.30544,657.94028 465.60496,2.00003"
+       id="path186726" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.99403;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1256.9104,659.94031 V 472.9283"
+       id="path186728" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.99403;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 923.01043,475.1833 v 64.4243"
+       id="path187426" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.99402993;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 429.20345,657.94032 H 388.71044 V 117.9403 h 40.49401"
+       id="path1326" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.99402993;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 429.20445,297.9403 h -40.493"
+       id="path1761" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.99403;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 430.21045,477.9403 H 388.71044"
+       id="path1763-3-6"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.99403;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 350.45145,149.9403 38.25899,0"
+       id="path2120"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

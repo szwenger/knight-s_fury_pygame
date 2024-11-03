@@ -1,0 +1,9 @@
+Roadmap - EiP Praktikum
+
+- [ ] Create working game-info screen
+- [ ] Create Update-Loop (Player & Enemy Pos, Player and Enemy Draw Size)
+- [ ] Fix Enemy + Player Speed + Size with resized Window
+- [ ] Create Sword motion
+- [ ] Create Enemy collision 
+- [x] Create Player Borders
+- [ ] 

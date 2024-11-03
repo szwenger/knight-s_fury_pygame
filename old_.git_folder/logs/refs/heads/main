@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 f98b903442541b92c5670e7ebdaa8ad9896ee5bd Simon Zwenger <szwenger@students.uni-mainz.de> 1710367023 +0100	clone: from ssh://gitlab.rlp.net/cg/teach/eip-ws23-practical-course/groups/eip-group-2.git
+f98b903442541b92c5670e7ebdaa8ad9896ee5bd ac2922e18e40333ba96f84b4b00877af4fdaefbf Simon Zwenger <szwenger@students.uni-mainz.de> 1710368511 +0100	commit: Uploaded Presentation
+ac2922e18e40333ba96f84b4b00877af4fdaefbf fb576c4d3ec2b99c42237d2ced08e69ce3266563 Simon Zwenger <szwenger@students.uni-mainz.de> 1710368513 +0100	pull --tags origin main: Merge made by the 'ort' strategy.
+fb576c4d3ec2b99c42237d2ced08e69ce3266563 0c01278898f55b73da017268a714deb71df607ab Simon Zwenger <szwenger@students.uni-mainz.de> 1730659362 +0100	commit: Importet all files from original repo
+0c01278898f55b73da017268a714deb71df607ab cee12ea5c8a82051dee4aeec68a5940d332ef1db Simon Zwenger <szwenger@students.uni-mainz.de> 1730659374 +0100	merge origin/main: Merge made by the 'ort' strategy.
+cee12ea5c8a82051dee4aeec68a5940d332ef1db 9b617eaf57fbecd221367bcdadbfcb8d60efe184 Simon Zwenger <szwenger@students.uni-mainz.de> 1730659408 +0100	commit: Files-Import
