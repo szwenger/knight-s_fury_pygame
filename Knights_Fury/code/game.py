@@ -6,10 +6,10 @@
 #player position + velocity
 
 
-# ---------- Import Modules and Libaries ---------- 
+# ---------- Import Modules and Libaries ----------
 
 import pygame, random, math, time
-from constants import * # Import all variables from variabes.py
+from constants import * # Import all variables from variables.py
 from main_menu import MainMenu
 from start_screen import Start_Screen
 from options import Options
@@ -21,6 +21,7 @@ from enemy import *
 from field import Field
 from sidemenu import SideMenu
 #from debug import debug
+
 
 pygame.init() # Initialize Pygame
 
@@ -43,9 +44,10 @@ pygame.mouse.set_visible(False) # Hide the mouse cursor
 drawn = [] # for archer arrows
 
 def update_all_for_resize(old_screen_width, old_screen_height, snowflakes: list):
+    global screen_width, screen_height
     screen_width = old_screen_width
     screen_height = old_screen_height
-    # Import all variables from variabes.py
+    # Import all variables from variables.py
     # Get new screen size
     (new_screen_width, new_screen_height) = event.size
 
@@ -68,40 +70,38 @@ def update_all_for_resize(old_screen_width, old_screen_height, snowflakes: list)
         screen = pygame.display.set_mode((new_screen_width, new_screen_height), pygame.RESIZABLE)
         screen_width = new_screen_width
         screen_height = new_screen_height
-            
+
     main_menu.update_for_resize(screen_width, screen_height)
     cursor.update_for_resize(screen_height)
 
     # Update field and sidemenu size
-    old_fieldlength = field.sidelength 
+    old_fieldlength = field.sidelength
     field.update_for_resize(screen_height)
     new_fieldlength = field.sidelength
-    
+
     start_screen.update_for_resize(screen_width, screen_height, snowflakes)
     sidemenu.update_for_resize(screen_width, screen_height)
     death_screen.update_for_resize(new_fieldlength)
     cursor.update_for_resize(screen_height)
 
     # Update player and enemy size and position
-    # player_texture = player.load_texture(player_still_img)
     player.update_for_resize(old_fieldlength, new_fieldlength)
 
-    #Update enemy position and speed
+    # Update enemy position and speed
     for enemy in enemies:
-        enemy.update_for_resize(field, old_fieldlength, screen_width)                    
+        enemy.update_for_resize(field, old_fieldlength, screen_width)
+        if isinstance(enemy, archer):
+            for enemy_arrow in enemy.arrows:
+                enemy_arrows.update_for_resize(field.sidelength)
 
-    for i in range (0, 9, 1):
-        sword_sprites[i] = pygame.transform.scale(sword_sprites[i], (player.size[0]*(5/2), player.size[1]*(5/2)))
-    
+    for i in range(0, 9, 1):
+        sword_sprites[i] = pygame.transform.scale(sword_sprites[i], (player.size[0] * (5/2), player.size[1] * (5/2)))
+
     options.update_for_resize(screen_width, screen_height, snowflakes)
-    
+
     for player_arrow in player.arrows:
         player_arrow.update_for_resize(field.sidelength)
-        
-    if enemy.__class__ == archer:
-        for enemy_arrows in enemy.arrows:
-            enemy_arrows.update_for_resize(field.sidelength)
-    
+
     old_screen_width = screen_width
     old_screen_height = screen_height
 
@@ -166,7 +166,7 @@ for i in range (0, 9, 1):
 # player_texture = player.load_texture(player_still_img) # Load Player Image
 
 # ---------- Main Loop ----------
-f = open("Knights_Fury/_resources/highscore.txt", "r")
+f = open(get_path("_resources", "highscore.txt"), "r")
 highscore = max(int(line.strip()) for line in f.readlines()) #Aktueller Highscore
 f.close()
 
@@ -185,7 +185,7 @@ while run:
         
         # Music
         if pygame.mixer.music.get_busy() == False:
-            pygame.mixer.music.load('Knights_Fury/_sounds/Minifantasy_Dungeon_Music/Music/Goblins_Den_(Regular).wav')
+            pygame.mixer.music.load(get_path("_sounds", "Minifantasy_Dungeon_Music", "Music", "Goblins_Den_(Regular).wav"))
             pygame.mixer.music.play(-1)
         
         # --- Event handler - Start Screen ---
@@ -215,7 +215,7 @@ while run:
         
         # Music
         if pygame.mixer.music.get_busy() == False:
-            pygame.mixer.music.load('Knights_Fury/_sounds/Minifantasy_Dungeon_Music/Music/Goblins_Den_(Regular).wav')
+            pygame.mixer.music.load(get_path("_sounds", "Minifantasy_Dungeon_Music", "Music", "Goblins_Den_(Regular).wav"))
             pygame.mixer.music.play(-1)
         
         # --- Event handler - Main Menu ---
@@ -248,18 +248,18 @@ while run:
         
         # Music
         if pygame.mixer.music.get_busy() == False:
-            pygame.mixer.music.load('Knights_Fury/_sounds/Minifantasy_Dungeon_Music/Music/Goblins_Dance_(Battle).wav')
+            pygame.mixer.music.load(get_path("_sounds", "Minifantasy_Dungeon_Music", "Music", "Goblins_Dance_(Battle).wav"))
             pygame.mixer.music.play(-1)
         
         #Waves 
         if player.health <= 0:
-            f = open("Knights_Fury/_resources/highscore.txt", "a")
+            f = open(get_path("_resources", "highscore.txt"), "a")
             f.write(str(score) + "\n")
             f.close()
             print("You Died.")
-            print(f"Score: {player.kills*wave}")
-            pygame.image.save(screen, "Knights_Fury/_images/before_death_screen.png")
-            death_screen.background = pygame.image.load("Knights_Fury/_images/before_death_screen.png")
+            print(f"Score: {player.kills * wave}")
+            pygame.image.save(screen, get_path("_images", "before_death_screen.png"))
+            death_screen.background = pygame.image.load(get_path("_images", "before_death_screen.png"))
             status = "death_screen"
             
         if player.kills >= 999:

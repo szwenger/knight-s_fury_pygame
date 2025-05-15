@@ -10,13 +10,22 @@ class Options:
         self.screen_height = screen_height
         self.inital_screen_width = screen_width
         self.initial_screen_height = screen_height
-        self.font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', screen_height//33)
+
+        # Absoluter Font-Pfad
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        font_path = os.path.join(base_dir, "../_resources/public-pixel-font/PublicPixel-z84yD.ttf")
+
+        # Sicherstellen, dass die Datei existiert
+        if not os.path.exists(font_path):
+            raise FileNotFoundError(f"Font file not found: {font_path}")
+
+        self.font = pygame.font.Font(font_path, screen_height//33)
         self.music_button = pygame.Rect(screen_width/3, screen_height/11, screen_width * (1/3), screen_height/11)
         self.sound_button = pygame.Rect(screen_width/3, screen_height * (3/11), screen_width * (1/3), screen_height/11)
         self.volume_slider = pygame.Rect(screen_width/3, screen_height * (5/11), screen_width * (1/3), screen_height/11)
         self.difficulty_slider = pygame.Rect(screen_width/3, screen_height * (7/11), screen_width * (1/3), screen_height/11)
         self.back_button = pygame.Rect(screen_width/3, screen_height * (9/11), screen_width * (1/3), screen_height/11)
-        self.button_texture = pygame.image.load('Knights_Fury/_images/Menu_Button.png')
+        self.button_texture = pygame.image.load(get_path("_images", "Menu_Button.png"))
         self.button_texture = pygame.transform.scale(self.button_texture, (int(screen_width * (1/3)), int(screen_height/11)))
         self.music_button_text = "Music: On"
         self.sound_button_text = "Sound: On"
@@ -36,7 +45,7 @@ class Options:
         self.volume_slider = pygame.Rect(new_screen_width/3, new_screen_height * (5/11), new_screen_width * (1/3), new_screen_height/11)
         self.difficulty_slider = pygame.Rect(new_screen_width/3, new_screen_height * (7/11), new_screen_width * (1/3), new_screen_height/11)
         self.back_button = pygame.Rect(new_screen_width/3, new_screen_height * (9/11), new_screen_width * (1/3), new_screen_height/11)
-        self.font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', new_screen_height//33)
+        self.font = pygame.font.Font(get_path("_resources", "public-pixel-font", "PublicPixel-z84yD.ttf"), new_screen_height // 33)
         self.button_texture = pygame.transform.scale(self.button_texture, (int(new_screen_width * (1/3)), int(new_screen_height/11)))       
         
     def background_snowfall(self, screen, snowflakes: list):

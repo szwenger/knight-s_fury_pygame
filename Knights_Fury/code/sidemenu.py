@@ -8,8 +8,17 @@ class SideMenu:
         self.position = (screen_height, 0)
         self.size = (screen_width - screen_height, screen_height)
         self.rect = pygame.Rect((screen_height, 0), self.size)
+
+        # Absoluter Font-Pfad
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        font_path = os.path.join(base_dir, "../_resources/public-pixel-font/PublicPixel-z84yD.ttf")
+
+        # Sicherstellen, dass die Datei existiert
+        if not os.path.exists(font_path):
+            raise FileNotFoundError(f"Font file not found: {font_path}")
+
         self.font_size = int(round((1/35) * self.size[1]))
-        self.font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', self.font_size) # Load the font 
+        self.font = pygame.font.Font(font_path, self.font_size) # Load the fonthe font
         self.background = wooden_background
         self.background = pygame.transform.scale(self.background, self.size)
         self.texture = scroll_img
@@ -25,14 +34,14 @@ class SideMenu:
         self.rect.size = self.size
         self.rect = pygame.Rect((new_screen_height, 0), self.size)
         self.font_size = int(round((1/35) * self.size[1]))
-        self.font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', self.font_size)
+        self.font = pygame.font.Font(get_path("_resources", "public-pixel-font", "PublicPixel-z84yD.ttf"), self.font_size)
         self.background = pygame.transform.scale(wooden_background, self.size)
         self.background = pygame.transform.scale(self.background, self.size)        
         self.texture = pygame.transform.scale(scroll_img, self.size)
         self.texture = pygame.transform.scale(self.texture, self.size)
     
     def draw_info(self, screen, health: int, kills: int, time: float, arrow_count:int, wave:int, score, highscore):
-        font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', int(round((1/25) * screen.get_height())))
+        font = pygame.font.Font(get_path("_resources", "public-pixel-font", "PublicPixel-z84yD.ttf"), int(round((1/25) * screen.get_height())))
         health_text = "Health: " + str(health)
         kills_text = "Kills: " + str(kills)
         time_text = "Time: " + str(time)

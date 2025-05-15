@@ -10,10 +10,19 @@ class Death_Screen:
         self.screen = screen
         self.player = player
         self.field = field
-        self.big_font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', (int(field.sidelength/10)))
-        self.normal_font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', (int(field.sidelength/20)))
-        self.small_font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', (int(field.sidelength/30)))
-        self.button_image = pygame.image.load('Knights_Fury/_images/Menu_Button.png')
+
+        # Absoluter Font-Pfad
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        font_path = os.path.join(base_dir, "../_resources/public-pixel-font/PublicPixel-z84yD.ttf")
+
+        # Sicherstellen, dass die Datei existiert
+        if not os.path.exists(font_path):
+            raise FileNotFoundError(f"Font file not found: {font_path}")
+
+        self.big_font = pygame.font.Font(font_path, (int(field.sidelength/10)))
+        self.normal_font = pygame.font.Font(font_path, (int(field.sidelength/20)))
+        self.small_font = pygame.font.Font(font_path, (int(field.sidelength/30)))
+        self.button_image = pygame.image.load(get_path("_images", "Menu_Button.png"))
         self.restart_button = pygame.Rect(field.sidelength/4, field.sidelength/7, self.field.sidelength/2, self.field.sidelength/7)
         self.main_menu_button = pygame.Rect(field.sidelength/4, field.sidelength * (3/7), self.field.sidelength/2, self.field.sidelength/7)
         self.quit_button = pygame.Rect(field.sidelength/4, field.sidelength * (5/7), self.field.sidelength/2, self.field.sidelength/7)
@@ -52,10 +61,10 @@ class Death_Screen:
         self.draw_text('Quit', self.normal_font, (255, 255, 255), self.field.sidelength/2, self.field.sidelength * (5/7) + self.field.sidelength/14)
         
     def update_for_resize(self, new_fieldlength):
-        self.big_font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', (int(new_fieldlength/10)))
-        self.normal_font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', (int(new_fieldlength/20)))
-        self.small_font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', (int(new_fieldlength/30)))
-        self.restart_button = pygame.Rect(new_fieldlength/4, new_fieldlength/7, new_fieldlength/2, new_fieldlength/7)
-        self.main_menu_button = pygame.Rect(new_fieldlength/4, new_fieldlength * (3/7), new_fieldlength/2, new_fieldlength/7)
-        self.quit_button = pygame.Rect(new_fieldlength/4, new_fieldlength * (5/7), new_fieldlength/2, new_fieldlength/7)
+        self.big_font = pygame.font.Font(get_path("_resources", "public-pixel-font", "PublicPixel-z84yD.ttf"), int(new_fieldlength / 10))
+        self.normal_font = pygame.font.Font(get_path("_resources", "public-pixel-font", "PublicPixel-z84yD.ttf"), int(new_fieldlength / 20))
+        self.small_font = pygame.font.Font(get_path("_resources", "public-pixel-font", "PublicPixel-z84yD.ttf"), int(new_fieldlength / 30))
+        self.restart_button = pygame.Rect(new_fieldlength / 4, new_fieldlength / 7, new_fieldlength / 2, new_fieldlength / 7)
+        self.main_menu_button = pygame.Rect(new_fieldlength * (3 / 7), new_fieldlength / 4, new_fieldlength / 2, new_fieldlength / 7)
+        self.quit_button = pygame.Rect(new_fieldlength * (5 / 7), new_fieldlength / 4, new_fieldlength / 2, new_fieldlength / 7)
         self.button_image = pygame.transform.scale(self.button_image, self.restart_button.size)

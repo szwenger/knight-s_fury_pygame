@@ -8,8 +8,17 @@ class MainMenu:
         self.width = int(round(screen_width))
         self.height = int(round(screen_height))
         self.size = (self.width, self.height)
+
+        # Absoluter Font-Pfad
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        font_path = os.path.join(base_dir, "../_resources/public-pixel-font/PublicPixel-z84yD.ttf")
+
+        # Sicherstellen, dass die Datei existiert
+        if not os.path.exists(font_path):
+            raise FileNotFoundError(f"Font file not found: {font_path}")
+
         self.font_size = int(round((1/15) * self.height))
-        self.font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', self.font_size) # Load the font
+        self.font = pygame.font.Font(font_path, self.font_size) # Load the font
         self.rect = pygame.Rect((0, 0), self.size)
         self.background = menu_background
         self.background = pygame.transform.scale(self.background, self.size)
@@ -61,7 +70,7 @@ class MainMenu:
         self.width = new_screen_width
         self.size = (self.width, self.height)
         self.font_size = int(round((1/15) * self.height))
-        self.font = pygame.font.Font('Knights_Fury/_resources/public-pixel-font/PublicPixel-z84yD.ttf', self.font_size)
+        self.font = pygame.font.Font(get_path("_resources", "public-pixel-font", "PublicPixel-z84yD.ttf"), self.font_size)
         self.rect.size = self.size
         self.rect = pygame.Rect((0, 0), self.size)
         self.button_background = menu_button
